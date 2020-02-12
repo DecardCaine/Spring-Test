@@ -25,9 +25,9 @@ public class SpringTest {
 		K=scan.nextDouble();
 		System.out.println("Please enter the damping constant as angular frequency (rad/second)");
 		V=scan.nextDouble();
-		if(a<0||s<0||m<0||K<0||V<0) 
+		if(s<=0||m<=0||K<=0||V<=0) 
 		{
-			System.out.println("Error! Do not enter any negative value for these variables:amplitude,time interval,mass,stiffness,damping constant");
+			System.out.println("Error! Do not enter any negative value or zero for these variables:time interval,mass,stiffness,damping constant");
 			return;
 		}
 		w0=Math.sqrt(K/m);

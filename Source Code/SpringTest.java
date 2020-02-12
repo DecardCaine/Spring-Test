@@ -35,7 +35,7 @@ public class SpringTest {
 		//Math.sqrt means : square root(variable)
 		if(2*w0<=V) 
 		{
-			System.out.println("Error! Something went wrong when calculating the fixed angular frequency:2*stiffness*stifness/mass*mass should bigger than the damping constant ");
+			System.out.println("Error! Negative number inside of root at line 34 :2*stiffness*stifness/mass*mass should bigger than the damping constant ");
 			return;
 		}
 		while(true)

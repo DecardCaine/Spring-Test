@@ -31,13 +31,13 @@ public class SpringTest {
 			return;
 		}
 		w0=Math.sqrt(K/m);
-		w1=Math.sqrt(w0*w0-V*V/4);
-		//Math.sqrt means : square root(variable)
 		if(2*w0<=V) 
 		{
 			System.out.println("Error! Negative number inside of root at line 34 :2*stiffness*stifness/mass*mass should bigger than the damping constant ");
 			return;
 		}
+		w1=Math.sqrt(w0*w0-V*V/4);
+		//Math.sqrt means : square root(variable)
 		while(true)
 		{
 			x=a*Math.exp(-V*t/2)*Math.cos(w1*t);//calculates the spring length over time 

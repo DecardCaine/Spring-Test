@@ -42,7 +42,7 @@ public class SpringTest {
 		{
 			x=a*Math.exp(-V*t/2)*Math.cos(w1*t);//calculates the spring length over time 
 			//Math.exp means : e^(variable)
-			if(0.000001>Math.abs(x)&& t>0)//condition for stop the loop 
+			if(0.000001>Math.abs(x)&& t>0)
 			{
 				if(Math.abs(y-x)<0.000001) 
 				{
